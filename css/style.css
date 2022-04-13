@@ -1,0 +1,399 @@
+
+
+html{
+    background-color: #D3D3D3;
+    margin: 20px;
+}
+
+header{
+    border: solid 5px blue;
+    border-radius: 20px;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav li{
+    margin: 2px;
+    padding: 15px;
+    border: solid 2px #000000;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.active{
+    background-color: white;
+}
+
+h1{
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+body{
+    border: #000000 solid 10px;
+    padding: 10px;
+}
+
+p{
+    margin: auto;
+    font-size: 17.5px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+img{
+    border: solid 8px white;
+    border-radius: 15%;
+    margin: 10px;
+    min-height: 200px;
+    max-height: 500px;
+    min-width: 300px;
+    max-width: 700px;
+    padding: 0px;
+    
+}
+
+img:hover{
+    border: double 10px #4682b4;
+}
+
+footer{
+    background-color: black;
+    padding: 10px 15px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.top10NBA{
+    display: grid;
+    grid-template-columns: 3fr;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.top10NBA div{
+    border: 3px solid white;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 30px;
+}
+
+div p, #main1, h1, form, footer, nav{
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.WNBA{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.WNBA div{
+    border: 3px solid white;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 30px;
+}
+
+.WNBA img{
+    min-height: 200px;
+    max-height: 400px;
+    max-width: 700px;
+    min-width: 380px;
+}
+
+.NBAlate1stround{
+    text-align: center;
+}
+
+.NBAlate1stround div{
+    border: 3px solid white;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 30px;
+}
+
+.intro, .drafthistory{
+    text-align: center;
+}
+
+.intro{
+    border: 3px solid white;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 30px;
+}
+
+.drafthistory div{
+    border: 3px solid white;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 30px;
+}
+
+@keyframes mymove {
+    from {width: 15px; opacity: 0;}
+    to {width: 200px; opacity: 1;}
+}
+
+#logo{
+    animation-name: mymove;
+    animation-duration: 5s;
+}
+
+i{
+    color: white;
+}
+
+a.skip{
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    /* Requirement 3 code here*/
+    position: absolute;
+    left: -500px;
+  }
+
+a.skip:focus{
+    left: 0px;
+    top: 20px;
+      
+}
+
+body{
+    background-image:url('../images/BasketballCourtImage.jpeg');
+}
+
+form{
+    padding: 15px;
+    border: solid 5px black;
+    margin: 10px;
+}
+
+legend{
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+}
+
+.intro img{
+    margin: auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 325px;
+    perspective: 1000px;
+    margin: auto;
+  }
+  
+.flip-card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+.flip-card-back {
+    background-color: grey;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+@media screen and (min-width: 700px){
+    .top10NBA{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    
+    .WNBA{
+        display: flex;
+        padding: 10px;
+    }
+
+    .WNBA div{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        padding: 10px;
+        border: 3px solid white;
+        border-radius: 15px;
+    }
+
+    .WNBA img{
+        max-height: 300px;
+        align-content: center;
+    }
+
+    .NBAlate1stround{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    
+    .intro, .drafthistory{
+        text-align: center;
+    }
+
+    .top10NBA div{
+        max-height: 80vh;
+        overflow: scroll;
+        border: 3px solid white;
+        padding: 5px;
+        margin: 5px 10px;
+        border-radius: 30px;
+    }
+
+    .NBAlate1stround div{
+        max-height: 80vh;
+        overflow: scroll;
+        border: 3px solid white;
+        padding: 5px;
+        margin: 5px 10px;
+        border-radius: 30px;
+    }
+
+    .drafthistory div{
+        display: flex;
+        border: 3px solid white;
+        padding: 5px;
+        margin: 5px 10px;
+        border-radius: 30px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .top10NBA{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .WNBA{
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        width: initial;
+        justify-content: center;
+    }
+
+    .WNBA div{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .NBAlate1stround{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    
+    .intro, .drafthistory{
+        text-align: center;
+    }
+
+    p{
+        font-size: 22.5px;
+    }
+
+    .top10NBA div{
+        max-height: 80vh;
+        overflow: scroll;
+        border: 3px solid white;
+        padding: 5px;
+        margin: 5px 10px;
+        border-radius: 30px;
+    }
+
+    .top10NBA div:nth-last-child(1){
+        grid-column: 2/span 1;
+    }
+
+    .NBAlate1stround div{
+        max-height: 80vh;
+        overflow: scroll;
+        border: 3px solid white;
+        padding: 5px;
+        margin: 5px 10px;
+        border-radius: 30px;
+    }
+
+    .NBAlate1stround div:nth-last-child(1){
+        grid-column: 2/span 1;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #logo{
+        animation: none;
+    }
+      
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
+    
+    .flip-card-back {
+        display: none;
+        transform: none;
+    }
+}

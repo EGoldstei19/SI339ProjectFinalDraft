@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link to the favicon image -->
+        <link rel="icon" href="images/BasketballFaviconImage.ico">
+        <!-- Link to the reset file -->
+        <link rel="stylesheet" href="css/html5reset.css">
+        <!-- Link to the stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/css/lightbox.css">
+        <title>Home Page</title>
+
+    </head>
+    <body>
+        <a class="skip" href = #main>Skip to Main Content</a>
+        <header>
+            <nav>
+                <ul>
+                    <!-- Since I am on the index file I added class = action to the link to index. -->
+                    <li><a href = "index.html" >Home</a></li>
+                    <li><a href = "top10NBAprospects.html">NBA Prospect Rankings 1-10</a></li>
+                    <li><a href = "late1stroundNBAprospects.html">NBA Prospect Rankings 11-20</a></li>
+                    <li><a href = "topWNBAprospects.html">WNBA Prospect Rankings</a></li>
+                    <li class="active"><a href = "HistoryofTheDraft.html">History of the Drafts</a></li>
+                </ul>
+            </nav>
+            <h1 id='main'>History of the Drafts</h1>
+        </header>
+        <main>
+            <div class='drafthistory'>
+                <div>
+                    <a class="2003NBADraftClass-image-link" href="images/2003NBADraftImage.jpeg" data-lightbox="drafthistory" data-title="2003 NBA Draft Class">
+                        <img class="2003NBADraftClass-image" src="images/2003NBADraftImage.jpeg" alt="NBA Draft Class back in 2003." width="200"/></a>
+                    <p>History of the NBA Draft -- The NBA Draft was first started all the way back in 1947, back when the 
+                    league was known as the BAA and there was only 8 teams in the league. The draft consisted of 10 rounds, 
+                    with 80 selections in total. Two years after that first draft, the BAA merged with the NBL to form the 
+                    NBA that is still going strong today. In the NBA Draft, for players to be eligible they must be at least 
+                    19 years old by the end of the calendar year and one year removed from high-school graduation. For a 
+                    period of time, players were allowed to enter the draft immediately after high school, but that was 
+                    ruled against following the 2005 season. While the first NBA draft was 10 rounds, since 1989 the draft 
+                    has consisted of two rounds, with 30 picks in each round and 60 players selected in total.</p></div>
+
+                <div>
+                    <a class="2010WNBADraftClass-image-link" href="images/2010WNBADraftImage.jpeg" data-lightbox="drafthistory" data-title="2010 WNBA Draft Class">
+                        <img class="2010WNBADraftClass-image" src="images/2010WNBADraftImage.jpeg" alt="WNBA Draft Class back in 2010." width="200"/></a>
+                    <p>History of the WNBA Draft -- The first WNBA draft was much later than the first NBA draft, as it did 
+                    not take place until 50 years later in 1997, when the league was first started. Unlike the NBA draft, 
+                    the WNBA draft requires that all eligible participants must be 4 years removed from high school, 
+                    meaning most draft prospects are not eligible until the graduate college. The 1997 draft was unique 
+                    because it was comprised of 3 parts: an initial allocation of players into individual teams, then a 
+                    WNBA elite draft which was designated for professionals coming from other leagues, and then 4 rounds 
+                    of a regular draft for incoming players. Since 2003, the WNBA draft has only consisted of a three-round 
+                    selection process with 12 picks in each round, so 36 players are selected in the draft each year.</p></div>
+            </div>
+
+        <form action="https://formspree.io/f/mayvbrdg"
+        method="POST">
+            <fieldset>
+              <legend>Offer Me Feedback!</legend>
+          
+              <label for="name_id">Your Name</label>
+              <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+          
+              <label for="email_id">Your Email</label>
+              <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+          
+              <label for="phone_id">Your Phone Number</label>
+              <input type="tel" name="phone" placeholder="123-456-7890" id="phone_id" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <div><span>Format: 123-456-7890</span></div>
+          
+          
+              <label for="msg">Leave A Message</label>
+              <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+          
+              <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+              <label for ="cBox">Remember me</label>
+          
+              <input type="submit" value = "Submit">
+            </fieldset>
+        </form>
+
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="dist/js/lightbox.js"></script>
+
+        <footer> Ethan Goldstein &copy; 2022    
+            <a aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/ethan-goldstein-398880180/">
+            <i class="fa fa-linkedin" style="font-size:20px;"></i></a>
+        </footer>
+    </body>
+</html>
